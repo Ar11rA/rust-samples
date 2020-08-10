@@ -23,6 +23,10 @@ fn main() {
     basics::data_structures::array_ops();
     basics::data_structures::tuple_ops();
     basics::data_structures::slice_ops(&[12, 13, 14]);
+    println!("Strings ....... ");
+    basics::strings::run_strings();
+    println!("Functions ....... ");
+    basics::functions::test_functions();
 
     // Advanced
     println!("Collections ....... ");
