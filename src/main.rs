@@ -34,5 +34,14 @@ fn main() {
     advanced::collections::vector_ops();
     advanced::collections::hashmap_ops();
     advanced::collections::hashset_ops();
+    println!("Traits ....... ");
+    advanced::traits::test_trait();
+    advanced::traits::test_super_trait();
+    println!("Concurrency ....... ");
+    advanced::concurrency::do_something_async();
+    println!("Crates ....... ");
+    advanced::crates::generate_random_number();
+    println!("Macros ....... ");
+    advanced::macros::run_macros();
 
 }
