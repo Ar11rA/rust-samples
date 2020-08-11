@@ -8,3 +8,6 @@ edition = "2018"
 
 [dependencies]
 rand = "0.3.12"
+futures = { version = "0.3.*" }
+tokio = {version = "0.2.*", features = ["full"] }
+reqwest = "0.10.7"

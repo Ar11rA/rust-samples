@@ -1,7 +1,8 @@
 mod basics;
 mod advanced;
 
-fn main() {
+#[tokio::main]
+async fn main() {
     // Basics
     println!("Hello, Rust!");
     println!("Variables and types ....... ");
@@ -43,5 +44,7 @@ fn main() {
     advanced::crates::generate_random_number();
     println!("Macros ....... ");
     advanced::macros::run_macros();
-
+    println!("Http ....... ");
+    advanced::http::method_alpha().await.unwrap();
+    advanced::http::method_beta().await.unwrap();
 }
