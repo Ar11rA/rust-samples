@@ -47,4 +47,5 @@ async fn main() {
     println!("Http ....... ");
     advanced::http::method_alpha().await.unwrap();
     advanced::http::method_beta().await.unwrap();
+    advanced::http::deserialize_simple().await;
 }
