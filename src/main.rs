@@ -1,5 +1,10 @@
+// normal imports
 mod basics;
 mod advanced;
+
+// test imports
+#[cfg(test)]
+mod tests;
 
 #[tokio::main]
 async fn main() {
