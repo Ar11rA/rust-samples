@@ -61,11 +61,11 @@ struct Network {
     origin: String
 }
 
-pub async fn deserialize_simple() {
+pub async fn deserialize_simple() -> Result<bool, Box<dyn Error>> {
     let resp: Network = reqwest::get("https://httpbin.org/ip")
-        .await
-        .unwrap()
+        .await?
         .json()
-        .await.unwrap();
+        .await?;
     println!("IP details: {:?}", resp);
+    return Ok(true);
 }

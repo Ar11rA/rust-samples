@@ -45,12 +45,13 @@ async fn main() {
     advanced::traits::test_super_trait();
     println!("Concurrency ....... ");
     advanced::concurrency::do_something_async();
+    advanced::concurrency::greet().await;
     println!("Crates ....... ");
     advanced::crates::generate_random_number();
     println!("Macros ....... ");
     advanced::macros::run_macros();
     println!("Http ....... ");
-    advanced::http::method_alpha().await.unwrap();
+    advanced::http::method_alpha().await.unwrap(); // unwrap to get result and ignore error warning
     advanced::http::method_beta().await.unwrap();
-    advanced::http::deserialize_simple().await;
+    advanced::http::deserialize_simple().await.unwrap();
 }
