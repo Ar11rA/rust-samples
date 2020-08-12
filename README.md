@@ -27,7 +27,10 @@ Learn rust by doing. By exploring these examples, one should get comfortable usi
 └── traits.rs
 ```
 
+- Testing
+
 ## Sources
 
 - https://doc.rust-lang.org/
 - https://rust-lang.github.io/
+- http://technosophos.com/2018/07/07/from-go-to-rust-testing.html
